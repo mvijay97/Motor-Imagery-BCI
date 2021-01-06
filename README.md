@@ -33,3 +33,11 @@ Since the method of Common Spatial Patterns is only applicable to binary classif
     <b>Grouped</b> - This classification paradigm employs two levels of classification. The first level distinguishes between trials that correspond either to Left or Right Hand movement OR to Tongue or Foot Movement. If the trial is classified as belonging to one of Left or Right Hand movement, the Left versus Right Hand classifier is invoked to classify the trial, else the Tongue versus Foot movement is invoked to classify the trial
   </li>
 </ul>
+
+<b> To run these Motor Imagery classification pipelines - </b>
+* Download the <a href='http://www.bbci.de/competition/iv/'> BCI Competition 2008 – Graz data set A </a>
+* Run the preproc.py script to segment and filter the signals. Update the path in the file to point to the location of the dataset
+* Run the relevant notebook based on which classifier you want to test (remember to update the dataset paths to the location where your filtered, augmented signals reside - 
+ 1. OVR-Gaussian.ipynb - for the One versus the Rest classifier
+ 2. OVO-Gaussian,ipynb - for the One versus One classifier
+ 3. Grouped-Gaussian.ipynb - for the Grouped classifier
